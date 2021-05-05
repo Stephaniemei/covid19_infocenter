@@ -12,6 +12,10 @@
         // echo $_POST['input_name'];
         // echo '<br>';
         // echo $_POST['input_nric'];
+		// echo '<br>';
+        // echo $_POST['input_email'];
+		// echo '<br>';
+        // echo $_POST['input_number'];
         
         if (file_exists($_POST['input_nric'] . '.txt')){     //Check for filename with given nric
             echo '<h3>You are already registered!</h3>';
@@ -20,6 +24,8 @@
             
            $content_to_write = "Name: " . $_POST['input_name'] . "\n";
            $content_to_write .= "NRIC: " . $_POST['input_nric'] . "\n";
+		   $content_to_write .= "E-mail: " . $_POST['input_email'] . "\n";
+           $content_to_write .= "Contact Number: " . $_POST['input_number'] . "\n";
            file_put_contents($_POST['input_nric'] . '.txt', $content_to_write);
            echo '<h3>Registration is successful!</h3>';
         }
