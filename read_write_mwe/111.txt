@@ -1,4 +1,0 @@
-Name: aa
-NRIC: 111
-E-mail: as
-Contact Number: 11
