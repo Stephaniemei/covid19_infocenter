@@ -286,7 +286,7 @@
 						<br>
 						<br>
 						<!--Register for vaccination-->
-						<div class="row">    
+						<div id="register_vaccination" class="row">    
                             <div class="col">
                                 <h3 class="card-title h3 mb-3 text-left">Register for vaccination</h3>
 								<form action="read_write_mwe/reg_process.php" method="post">
@@ -309,6 +309,16 @@
 									<button type="submit">Register</button>
 								</form> 	                                              
                             </div>
+							<div class="col">
+								<h3 class="card-title h3 mb-3 text-left">Check for vaccination</h3>
+								<form action="read_write_mwe/reg_check.php" method="post">
+									<h5>
+										NRIC:
+										<input type="text" name="input_nric"></input>
+									</h5>
+									<button type="submit">Check</button>
+								</form> 
+							</div>
                         </div> 			
                     </div>
                 </div>
